@@ -1,0 +1,8 @@
+setenv SSH_AUTH_SOCK "/tmp/ssh-agent-$USER-screen"
+term screen-256color
+screen -t code
+screen -t build
+screen -t misc
+altscreen on
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
