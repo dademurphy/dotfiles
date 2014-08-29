@@ -1,18 +1,18 @@
 set nocompatible
 filetype off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/Vundle.vim'
 
 Bundle 'nsf/gocode', {'rtp': 'vim/'}
-Bundle 'jnwhiteh/vim-golang'
+"Bundle 'jnwhiteh/vim-golang'
 
-Bundle 'maksimr/vim-jsbeautify'
-Bundle 'walm/jshint.vim'
+"Bundle 'maksimr/vim-jsbeautify'
+"Bundle 'walm/jshint.vim'
 
-Bundle 'Tagbar'
+"Bundle 'Tagbar'
 
 filetype plugin indent on
 syntax enable

@@ -1,0 +1,9 @@
+[user]
+	name = Johnny Graettinger
+	email = johnny531@gmail.com
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
+[push]
+	default = simple
