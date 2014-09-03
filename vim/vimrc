@@ -4,19 +4,21 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Bundle 'gmarik/Vundle.vim'
+Plugin 'gmarik/Vundle.vim'
 
-Bundle 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'kelan/gyp.vim'
 "Bundle 'jnwhiteh/vim-golang'
-
 "Bundle 'maksimr/vim-jsbeautify'
 "Bundle 'walm/jshint.vim'
-
 "Bundle 'Tagbar'
 
+call vundle#end()
 filetype plugin indent on
-syntax enable
 
+" End Vundle-required stuff.
+
+syntax enable
 set t_Co=256
 let g:solarized_termcolors=256
 set background=dark
