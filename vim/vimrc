@@ -28,11 +28,19 @@ set mouse=a
 set hlsearch
 set incsearch
 set ruler
+set nobackup
+set noswapfile
 
 map N :cprev<CR>
 map M :cnext<CR>
 
-set completeopt=longest,menuone
+set completeopt=longest,menuone,preview
+
+" Switch between source and header
+map <F5> :e %:r.h<CR>
+map <F6> :e %:r.cc<CR>
+nmap v<F5> :vsp<CR><C-W>h:e %:r.h<CR>
+nmap v<F6> :vsp<CR><C-W>l:e %:r.cc<CR>
 
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 match ExtraWhitespace /\s\+$/
