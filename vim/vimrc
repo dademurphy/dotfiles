@@ -6,8 +6,14 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'nsf/gocode', {'rtp': 'vim/'}
+" Assorted Golang Vim plugins.
+Plugin 'fatih/vim-go'
+
+" GYP Syntax.
 Plugin 'kelan/gyp.vim'
+
+Plugin 'editorconfig/editorconfig-vim'
+
 "Bundle 'jnwhiteh/vim-golang'
 "Bundle 'maksimr/vim-jsbeautify'
 "Bundle 'walm/jshint.vim'
@@ -36,40 +42,13 @@ map M :cnext<CR>
 
 set completeopt=longest,menuone,preview
 
+highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+match ExtraWhitespace /\s\+$/
+
+" TODO(johnny): Move to cpp ftplugin.
 " Switch between source and header
 map <F5> :e %:r.h<CR>
 map <F6> :e %:r.cc<CR>
 nmap v<F5> :vsp<CR><C-W>h:e %:r.h<CR>
 nmap v<F6> :vsp<CR><C-W>l:e %:r.cc<CR>
-
-highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
-match ExtraWhitespace /\s\+$/
-
-let g:tagbar_type_go = {
-    \ 'ctagstype' : 'go',
-    \ 'kinds'     : [
-        \ 'p:package',
-        \ 'i:imports:1',
-        \ 'c:constants',
-        \ 'v:variables',
-        \ 't:types',
-        \ 'n:interfaces',
-        \ 'w:fields',
-        \ 'e:embedded',
-        \ 'm:methods',
-        \ 'r:constructor',
-        \ 'f:functions'
-    \ ],
-    \ 'sro' : '.',
-    \ 'kind2scope' : {
-        \ 't' : 'ctype',
-        \ 'n' : 'ntype'
-    \ },
-    \ 'scope2kind' : {
-        \ 'ctype' : 't',
-        \ 'ntype' : 'n'
-    \ },
-    \ 'ctagsbin'  : 'gotags',
-    \ 'ctagsargs' : '-sort -silent'
-    \ }
 
