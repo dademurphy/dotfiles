@@ -4,6 +4,7 @@ ROOT="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 ln -s $ROOT/screen/screenrc ~/.screenrc
 
+rm ~/.profile
 ln -s $ROOT/bash/profile ~/.profile
 
 mkdir -p ~/.vim/colors ~/.vim/ftplugin/javascript ~/.vim/ftplugin/go
