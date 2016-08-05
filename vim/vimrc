@@ -16,12 +16,12 @@ Plugin 'editorconfig/editorconfig-vim'
 "let g:syntastic_javascript_checkers = ['jsxhint']
 "let g:syntastic_aggregate_errors = 1
 
-Plugin 'maksimr/vim-jsbeautify'
-Plugin 'mxw/vim-jsx'
-Plugin 'uarun/vim-protobuf'
 Plugin 'ekalinin/Dockerfile.vim'
-Plugin 'Matt-Deacalion/vim-systemd-syntax'
+Plugin 'millermedeiros/vim-esformatter'
+Plugin 'mxw/vim-jsx'
+Plugin 'pangloss/vim-javascript'
 Plugin 'tpope/vim-fugitive'
+Plugin 'uarun/vim-protobuf'
 
 call vundle#end()
 filetype plugin indent on
@@ -32,7 +32,7 @@ syntax enable
 set t_Co=256
 let g:solarized_termcolors=256
 set background=dark
-colorscheme solarized
+colorscheme evening
 
 set mouse=a
 set hlsearch
