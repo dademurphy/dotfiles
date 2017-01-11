@@ -1,6 +1,6 @@
 [user]
 	name = Johnny Graettinger
-	email = johnny@pippio.com
+	email = johnny.graettinger@liveramp.com
 [core]
 	editor = vim
 [merge]
@@ -9,7 +9,3 @@
 	default = current
 [color]
 	ui = true
-[filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
-	required = true
